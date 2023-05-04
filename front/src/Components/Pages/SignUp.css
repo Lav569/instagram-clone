@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;1,100;1,300;1,400&display=swap');
+.container_login{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 96%;
+    height: 100vh;
+    padding:0px 2rem;
+}
+.container_login .image_login{
+    /* background-image: url('../../Pictures/loginImage.jpg'); */
+    background-color: white;
+    color: blueviolet;
+    width: 30%;
+    border-radius: 10px;
+    /* box-shadow: 0px 0px 20px 0px rgb(105, 98, 98); */
+    /* border: 1px solid black; */
+    height:82vh;
+    display: flex;
+    justify-content: center;
+}
+.container_login .image_login img{
+    height: 100%;
+    width: 100%;
+}
+.container_login .form_signup{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+    /* color: blueviolet; */
+    width: 30%;
+    border-radius: 10px;
+    padding: 0.1rem;
+    box-shadow: 0px 0px 20px 0px rgb(105, 98, 98);
+    border: 1px solid black;
+    /* margin: 0px 1rem; */
+    height:75vh;
+    font-family: 'Poppins', sans-serif; 
+}
+.container_login .form_signup .form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+    height:62vh;
+    font-family: 'Poppins', sans-serif;
+}
+.container_login .form_signup .form-container .login-title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+.container_login .form_signup .form-container .userName,
+.container_login .form_signup .form-container .userPassword,
+.container_login .form_signup .form-container .userEmail,
+.container_login .form_signup .form-container .userfullName{
+    text-align: center;
+    border: 2px solid cyan;
+    background-color: rgb(195, 192, 192);
+    margin: 0.3rem;
+    color: rgb(72, 172, 138);
+    /* background: transparent; */
+    padding: 1rem 2rem;
+    border-radius: 5px;
+    width: 15rem;
+    /* height: 3rem; */
+    font-size: 0.8rem;
+    outline: none;
+    transition: all .2s ease-in-out;
+}
+.container_login .form_signup .form-container .userName:focus,
+.container_login .form_signup .form-container .userPassword:focus,
+.container_login .form_signup .form-container .userEmail:focus,
+.container_login .form_signup .form-container .userfullName:focus {
+    width: 20rem;
+    background-color:white;
+}
+.container_login .form_signup .form-container .loginBtn {
+    background: transparent;
+    border: 2px solid green;
+    padding: 0.7rem 2rem;
+    margin-top: 0.3rem;
+    border-radius: 5px;
+    text-decoration: underline;
+    font-size: 1.1rem;
+    color: rgb(105, 19, 19);
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+    width: 8rem;
+    opacity: 0.5;
+}
+
+.container_login .form_signup .form-container .loginBtn:hover {
+    background: rgb(12, 89, 233);
+    border: 2px solid  rgb(12, 89, 233);
+    border-radius: 6rem;
+    width: 10rem;
+    font-size: 1.2rem;
+    opacity: 1;
+}
+.container_login .form_signup .or{
+    margin: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 1rem;
+    width: 100%;
+}
+.container_login .form_signup .or .linel,.container_login .form_signup .or .liner{
+    border:1px solid black;
+    width:30%;
+    height:0px;
+    margin: 0px 5px;
+}
+.container_login .form_signup .sign_up{
+    height: 10vh;
+    width: 84%;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+.container_login .form_signup .sign_up a{
+    text-decoration: none;
+    color: rgb(12, 89, 233);
+    font-weight: 600;
+}
+@media only screen and (max-height:400px){
+    .container_login{
+        padding: 0px;
+    }
+    .container_login .image_login{
+        display: none;
+    }
+    .container_login .form_signup .form-container{
+        height:60vh;
+    }
+    .container_login .form_signup .form-container .userName,
+.container_login .form_signup .form-container .userPassword,
+.container_login .form_signup .form-container .userEmail,
+.container_login .form_signup .form-container .userfullName{
+    padding: 0px 2rem;
+}
+}
+@media only screen and (max-width:1020px){
+    .container_login{
+        padding: 0px 1rem;
+    }
+    .container_login .form_signup .form-container .userName,
+.container_login .form_signup .form-container .userPassword,
+.container_login .form_signup .form-container .userEmail,
+.container_login .form_signup .form-container .userfullName{
+        width: 10rem;
+        font-size: 0.8rem;
+    }
+    .container_login .form_signup .form-container .userName:focus,
+.container_login .form_signup .form-container .userPassword:focus,
+.container_login .form_signup .form-container .userEmail:focus,
+.container_login .form_signup .form-container .userfullName:focus{
+        width: 12rem;
+    }
+}
+@media only screen and (max-width:770px){
+    .container_login .form_signup{
+        width:80%;
+        margin: 0px;
+        height: 78vh;
+    }
+    .container_login .image_login{
+        width: 80%;
+    }
+    .container_login .form_signup .sign_up{
+        width:65%;
+    }
+}
+@media only screen and (max-width:550px){
+    .container_login .image_login{
+        width:0%;
+        display: none;
+    }
+    .container_login .form_signup .form-container{
+        width:70%;
+        margin: 0px
+    }
+    .container_login .form_signup .form-container .userName,
+.container_login .form_signup .form-container .userPassword,
+.container_login .form_signup .form-container .userEmail,
+.container_login .form_signup .form-container .userfullName {
+        width: 15rem;
+        font-size: 0.8rem;
+    }
+    .container_login .form_signup .form-container .userName:focus,
+.container_login .form_signup .form-container .userPassword:focus,
+.container_login .form_signup .form-container .userEmail:focus,
+.container_login .form_signup .form-container .userfullName:focus {
+        width: 20rem;
+    }
+}

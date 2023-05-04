@@ -1,0 +1,187 @@
+.Home{
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    overflow-y: scroll;
+    width:100%;
+}
+.card_component{
+    display: flex;
+    flex-direction: column;
+    margin:5px;
+    height: 80vh;
+    /* max-height: 80vh; */
+    border-bottom:0.1px solid black;
+    width:36rem;
+}
+.card_component .card_header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px 1rem;
+    height:10vh;
+}
+.card_component .card_header .profile_pic{
+    /* background-image: url("../Pictures/nature1.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+    border:1px solid black;
+    height:21px;
+    width: 21px;
+    border-radius: 50%;
+}
+.card_component .card_header .profile_pic #user_profile_pic{
+    height: 21px;
+    width: 21px;
+    border-radius: 50%;
+}
+.card_component .card_header .userName_location{
+    display: flex;
+    flex-direction: column;
+}
+.card_component .card_header .card_option{
+    margin-left: 75%;
+}
+.card_component .card_main{
+    height: 40vh;
+    width: 100%;
+    border:0.1px solid black;
+    border-radius: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card_component .card_main img{
+    height: 40vh;
+    width: 100%;
+}
+.card_component .card_footer{
+    display: flex;
+    flex-direction: column;
+    padding:5px;
+    /* border:1px solid brown */
+}
+.card_component .card_footer .card_likes_section{
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    float: left;
+    padding-bottom: 0px;
+    justify-items: center;
+    /* border: 1px solid blue; */
+    
+}
+.card_component .card_footer .card_likes_section .like_share{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    /* border: 1px solid black; */
+}
+.card_component .card_footer .card_likes_section  .total_likes{
+    margin-top: 0px;
+    margin-left: 1rem;
+    width: 90%;
+    /* border: 1px solid black; */
+}
+.card_component .card_footer .card_likes_section div{
+    margin: 0px 5px;
+}
+.card_component .card_footer .card_likes_section .total_likes{
+    margin: 0px;
+    margin-left: 1rem;
+}
+/* .card_component .card_footer .card_save{
+    margin-left: 75%;
+} */
+.card_component .postdetils_comment{
+    height: 10vh;
+    padding: 1px 1rem;
+    display: flex;
+    flex-direction: column;
+    /* border: 1px solid red; */
+}
+.card_component .postdetils_comment .add_a_comment{
+    outline-style: none;
+    border: none;
+    margin:0px;
+    width:90%;
+}
+.card_component .postdetils_comment .post_comment{
+    float: right;
+    border: none;
+    background-color: none;
+    font-weight: 600;
+    cursor: pointer;
+}
+.card_component .postdetils_comment .post_comment:hover{
+    background-color: aliceblue;
+}
+.Main_Content{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 3rem;
+    width:85%;
+    /* border: 0.5px solid red; */
+    overflow: hidden;
+    overflow-y: scroll;
+}
+.Post_Content{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.showComment{
+    width: 100%;
+    min-height:100vh ;
+    position: fixed;
+    left:20%;
+    background-color: rgba(16, 13, 13, 0.4);    
+}
+.container{
+    display: flex;
+    width: 50%;
+    background-color: white;
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    height: 500px;
+}
+.postPic{
+    background-color: black;
+    display: flex;
+    align-items: center;
+    width: 50%;
+    height: 500px;
+}
+.postPic img{
+    object-fit: contain;
+    height: 500px;
+    width: 100%;
+    /* width: 100%; */
+}
+.details{
+    min-width: 50%;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+}
+.comment-section{
+    flex-grow: 4;
+    text-align: left;
+    margin-left: 10px;
+}
+.close-comment{
+    position: fixed;
+    top: 1%;
+    right: 5%;
+    color: white;
+    border: none;
+    cursor: pointer;
+}

@@ -1,0 +1,113 @@
+.full_profile{
+    display: flex;
+    width:100%;
+    height: 99vh;
+}
+.full_profile .main_profile{
+    border:1px solid red;
+    width: 100%;
+    height: 100%;
+    overflow: scroll;
+    overflow-y: scroll;
+}
+.full_profile .main_profile .main_profile_header{
+    /* border: 1px solid violet; */
+    height: 20vh;
+    padding: 2rem 0rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.full_profile .main_profile_header .full_profile_pic_section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid black; */
+    width: 50%;
+}
+.full_profile .main_profile_header .full_profile_pic{
+    height: 140px;
+    width: 140px;
+    cursor: pointer;
+    /* border-radius: 50%; */
+}
+.full_profile .main_profile .main_profile_header .full_profile_pic_section .full_profile_pic #Full_profile_image{
+    height: 140px;
+    width: 140px;
+    border-radius: 50%;
+}
+
+.full_profile .main_profile .main_profile_header .profile_other_info{
+    width: 35%;
+    height: 15vh;
+    /* border: 1px solid black; */
+}
+.full_profile .main_profile .main_profile_header .profile_other_info .Profile_username{
+    height: 5vh;
+    width: 100%;
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+}
+.full_profile .main_profile .main_profile_header .profile_other_info .Profile_post_follower{
+    height: 5vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.full_profile .main_profile .main_profile_header .profile_other_info .Profile_post_follower span{
+    margin: 0px 10px;
+    cursor: pointer;
+}
+.full_profile .main_profile .main_profile_header .profile_other_info .profile_full_name{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+}
+.full_profile .main_profile .main_profile_gallery{
+    display: grid;
+    padding: 0px 6rem;
+    width: 83%;
+    height: 65vh;
+    overflow: hidden;
+    overflow-y: scroll;
+    scroll-behavior: auto;
+    grid-template-columns: repeat(4,1fr);
+    grid-row-gap: 2px;
+    grid-column-gap: 5px;
+}
+.full_profile .main_profile .main_profile_gallery div:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
+.full_profile .main_profile .main_profile_gallery::-webkit-scrollbar{
+    display: none;
+}
+.Post_details_show{
+    width:100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+.followbutton{
+    cursor: pointer;
+  font-weight: bolder;
+  padding: 13px 25px;
+  border-radius: 15px;
+  font-size: 0.8rem;
+  border: none;
+  color: white;
+  background: #0115eb;
+  transition: all 0.25s ease;
+  margin-left: 60px;
+}
+
+.followbutton:hover {
+    transform: scale(1.1);
+    box-shadow: 0 10px 20px -10px #0115eb;
+  }

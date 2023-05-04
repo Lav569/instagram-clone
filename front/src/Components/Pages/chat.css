@@ -1,0 +1,8 @@
+.Main_conversation{
+    padding: 0rem 1rem;
+}
+.conversation{
+    height: 40vh;
+    width: 80%;
+    border: 1px groove royalblue;
+}

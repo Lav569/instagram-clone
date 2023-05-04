@@ -1,0 +1,111 @@
+.card_component{
+    display: flex;
+    flex-direction: column;
+    margin:5px;
+    height: 75vh;
+    max-height: 80vh;
+    border-bottom:0.1px solid black;
+    width:36rem;
+}
+.card_component .card_header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px 1rem;
+    height:10vh;
+}
+.card_component .card_header .profile_pic{
+    /* background-image: url("../Pictures/nature1.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+    border:1px solid black;
+    height:21px;
+    width: 21px;
+    border-radius: 50%;
+}
+.card_component .card_header .profile_pic #user_profile_pic{
+    height: 21px;
+    width: 21px;
+    border-radius: 50%;
+}
+.card_component .card_header .userName_location{
+    display: flex;
+    flex-direction: column;
+}
+.card_component .card_header .card_option{
+    margin-left: 75%;
+}
+.card_component .card_main{
+    height: 40vh;
+    border:0.1px solid black;
+    border-radius: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card_component .card_footer{
+    display: flex;
+    flex-direction: column;
+    padding:5px;
+    /* border:1px solid brown */
+}
+.card_component .card_footer .card_likes_section{
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    float: left;
+    padding-bottom: 0px;
+    justify-items: center;
+    /* border: 1px solid blue; */
+    
+}
+.card_component .card_footer .card_likes_section .like_share{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    /* border: 1px solid black; */
+}
+.card_component .card_footer .card_likes_section  .total_likes{
+    margin-top: 0px;
+    margin-left: 1rem;
+    width: 90%;
+    /* border: 1px solid black; */
+}
+.card_component .card_footer .card_likes_section div{
+    margin: 0px 5px;
+}
+.card_component .card_footer .card_likes_section .total_likes{
+    margin: 0px;
+    margin-left: 1rem;
+}
+/* .card_component .card_footer .card_save{
+    margin-left: 75%;
+} */
+.card_component .postdetils_comment{
+    height: 10vh;
+    padding: 1px 1rem;
+    display: flex;
+    flex-direction: column;
+    /* border: 1px solid red; */
+}
+.card_component .postdetils_comment .add_a_comment{
+    outline-style: none;
+    border: none;
+    margin:0px;
+    width:90%;
+}
+.card_component .postdetils_comment .post_comment{
+    float: right;
+    border: none;
+    background-color: none;
+    font-weight: 600;
+    cursor: pointer;
+}
+.card_component .postdetils_comment .post_comment:hover{
+    background-color: aliceblue;
+}
